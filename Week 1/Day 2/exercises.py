@@ -190,14 +190,27 @@
 
 # ---
 
-# Write your function, here.
+# # Write your function, here.
 
-def factorial(num):
-    res = 1
-    for el in range(2, num + 1):
-        res *= el
-    return res
+# def factorial(num):
+#     res = 1
+#     for el in range(2, num + 1):
+#         res *= el
+#     return res
 
-print(factorial(1))  # > 1
-print(factorial(8))  # > 40320
-print(factorial(12))  # > 479001600
+# print(factorial(1))  # > 1
+# print(factorial(8))  # > 40320
+# print(factorial(12))  # > 479001600
+
+# ---
+
+# # Write your function, here.
+
+# def divisible_by_five(num):
+#     return True if num % 5 == 0 else False
+
+# print(divisible_by_five(5))  # > True
+# print(divisible_by_five(-55))  # > True
+# print(divisible_by_five(37))  # > False
+
+# # ---
