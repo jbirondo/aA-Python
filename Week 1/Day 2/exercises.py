@@ -190,3 +190,14 @@
 
 # ---
 
+# Write your function, here.
+
+def factorial(num):
+    res = 1
+    for el in range(2, num + 1):
+        res *= el
+    return res
+
+print(factorial(1))  # > 1
+print(factorial(8))  # > 40320
+print(factorial(12))  # > 479001600
