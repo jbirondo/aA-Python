@@ -95,11 +95,11 @@
 # print(how_many_legs(5, 2, 8))  # > 50
 
 # ---
-# Create your function, here.
+# # Create your function, here.
 
-def increment(num):
-    return num + 1
+# def increment(num):
+#     return num + 1
 
-print(increment(0))  # > 1
-print(increment(9))  # > 10
-print(increment(-3))  # > -2
+# print(increment(0))  # > 1
+# print(increment(9))  # > 10
+# print(increment(-3))  # > -2
