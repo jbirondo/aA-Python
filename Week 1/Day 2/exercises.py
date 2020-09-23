@@ -93,3 +93,13 @@
 # print(how_many_legs(2, 3, 5))  # > 36
 # print(how_many_legs(1, 2, 3))  # > 22
 # print(how_many_legs(5, 2, 8))  # > 50
+
+# ---
+# Create your function, here.
+
+def increment(num):
+    return num + 1
+
+print(increment(0))  # > 1
+print(increment(9))  # > 10
+print(increment(-3))  # > -2
