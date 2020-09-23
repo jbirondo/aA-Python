@@ -47,3 +47,14 @@
 # print(calc_sum('a', 'b'), 'is ab?', calc_sum('a', 'b') == 'ab')
 # print(calc_sum([1, 2], [3, 4]), 'is [1,2,3,4]?',
 #       calc_sum([1, 2], [3, 4]) == [1, 2, 3, 4])
+
+# ---
+
+# Define your function "addition" here
+
+def addition(el1, el2):
+    return el1 + el2
+
+print(addition(2, 3))   #> 5
+print(addition(-3, -6)) #> -9
+print(addition(7, 3))   #> 10
