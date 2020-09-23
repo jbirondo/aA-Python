@@ -103,3 +103,15 @@
 # print(increment(0))  # > 1
 # print(increment(9))  # > 10
 # print(increment(-3))  # > -2
+
+# ---
+
+# Write your function, here.
+
+def remainder(el1, el2):
+    return(el1 % el2)
+
+print(remainder(1, 3))  # > 1
+print(remainder(3, 4))  # > 3
+print(remainder(5, 5))  # > 0
+print(remainder(7, 2))  # > 1
