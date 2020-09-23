@@ -50,11 +50,22 @@
 
 # ---
 
-# Define your function "addition" here
+# # Define your function "addition" here
 
-def addition(el1, el2):
-    return el1 + el2
+# def addition(el1, el2):
+#     return el1 + el2
 
-print(addition(2, 3))   #> 5
-print(addition(-3, -6)) #> -9
-print(addition(7, 3))   #> 10
+# print(addition(2, 3))   #> 5
+# print(addition(-3, -6)) #> -9
+# print(addition(7, 3))   #> 10
+
+# ---
+
+# Write your function, here.
+
+def is_same_num(el1, el2):
+    return el1 == el2
+
+print(is_same_num(4, 8))  # >  False
+print(is_same_num(2, 2))  # >  True
+print(is_same_num(2, "2"))  # >  False
