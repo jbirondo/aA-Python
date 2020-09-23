@@ -129,11 +129,22 @@
 
 # ---
 
+# # Write your function, here.
+
+# def calculate_exponent(el1, el2):
+#     return(el1 ** el2)
+
+# print(calculate_exponent(5, 5))  # > 3125
+# print(calculate_exponent(10, 10))  # > 10000000000
+# print(calculate_exponent(3, 3))  # > 27
+
+# ---
+
 # Write your function, here.
 
-def calculate_exponent(el1, el2):
-    return(el1 ** el2)
+def long_burp(num):
+    return("Bu" + "r" * num + "p")
 
-print(calculate_exponent(5, 5))  # > 3125
-print(calculate_exponent(10, 10))  # > 10000000000
-print(calculate_exponent(3, 3))  # > 27
+print(long_burp(3))  # > "Burrrp"
+print(long_burp(5))  # > "Burrrrrp"
+print(long_burp(9))  # > "Burrrrrrrrrp"
