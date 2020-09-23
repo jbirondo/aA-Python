@@ -140,11 +140,28 @@
 
 # ---
 
+# # Write your function, here.
+
+# def long_burp(num):
+#     return("Bu" + "r" * num + "p")
+
+# print(long_burp(3))  # > "Burrrp"
+# print(long_burp(5))  # > "Burrrrrp"
+# print(long_burp(9))  # > "Burrrrrrrrrp"
+
+# ---
+
 # Write your function, here.
 
-def long_burp(num):
-    return("Bu" + "r" * num + "p")
+def cap_space(str):
+    res = ""
+    for letter in str:
+        if letter.isupper():
+            res += " {}".format(letter.lower())
+        else:
+            res += letter
+    return res
 
-print(long_burp(3))  # > "Burrrp"
-print(long_burp(5))  # > "Burrrrrp"
-print(long_burp(9))  # > "Burrrrrrrrrp"
+print(cap_space("helloWorld"))  # > "hello world"
+print(cap_space("iLoveMyTeapot"))  # > "i love my teapot"
+print(cap_space("stayIndoors"))  # > "stay indoors"
