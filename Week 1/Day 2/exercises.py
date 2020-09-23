@@ -226,3 +226,12 @@
 # print(is_last_character_n("Dean"))  # > True
 
 # ---
+
+# Write your function, here.
+
+def compare(el1, el2):
+    return len(el1) == len(el2)
+
+print(compare("AB", "CD"))  # > True
+print(compare("ABC", "DE"))  # > False
+print(compare("hello", "App Academy"))  # > False
