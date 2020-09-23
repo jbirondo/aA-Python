@@ -6,6 +6,11 @@ total = 0
 
 # STEP 2: Write the while loop
 while total < 100000000:
+    if total == 0:
+        total = 1
+    else:
+        total *= 2
+    count += 1
 
 
 print('Double', count, 'times')
