@@ -118,11 +118,22 @@
 
 # ---
 
+# # Write your function, here.
+
+# def string_int(str):
+#     return(int(str))
+
+# print(string_int("6"))  # > 6
+# print(string_int("1000"))  # > 1000
+# print(string_int("12"))  # > 12
+
+# ---
+
 # Write your function, here.
 
-def string_int(str):
-    return(int(str))
+def calculate_exponent(el1, el2):
+    return(el1 ** el2)
 
-print(string_int("6"))  # > 6
-print(string_int("1000"))  # > 1000
-print(string_int("12"))  # > 12
+print(calculate_exponent(5, 5))  # > 3125
+print(calculate_exponent(10, 10))  # > 10000000000
+print(calculate_exponent(3, 3))  # > 27
