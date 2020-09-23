@@ -63,9 +63,21 @@
 
 # Write your function, here.
 
-def is_same_num(el1, el2):
-    return el1 == el2
+# def is_same_num(el1, el2):
+#     return el1 == el2
 
-print(is_same_num(4, 8))  # >  False
-print(is_same_num(2, 2))  # >  True
-print(is_same_num(2, "2"))  # >  False
+# print(is_same_num(4, 8))  # >  False
+# print(is_same_num(2, 2))  # >  True
+# print(is_same_num(2, "2"))  # >  False
+
+# ---
+
+# Your function here
+
+def min2sec(num):
+    return num * 60
+
+
+print(min2sec(5))  # > 300
+print(min2sec(3))  # > 180
+print(min2sec(2))  # > 120
