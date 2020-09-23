@@ -176,3 +176,14 @@
 # print(concat_name("First", "Last"))  # > "Last, First"
 # print(concat_name("John", "Doe"))  # > "Doe, John"
 # print(concat_name("Mary", "Jane"))  # > "Jane, Mary"
+
+# ---
+
+# Write your function, here.
+
+def char_count(el1, el2):
+    return(el2.count(el1))
+
+print(char_count("a", "App Academy"))  # > 1
+print(char_count("c", "Chamber of Secrets"))  # > 1
+print(char_count("b", "big fat bubble"))  # > 4
