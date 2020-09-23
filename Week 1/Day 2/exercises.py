@@ -227,11 +227,45 @@
 
 # ---
 
+# # Write your function, here.
+
+# def compare(el1, el2):
+#     return len(el1) == len(el2)
+
+# print(compare("AB", "CD"))  # > True
+# print(compare("ABC", "DE"))  # > False
+# print(compare("hello", "App Academy"))  # > False
+
+
+# ---
 # Write your function, here.
 
-def compare(el1, el2):
-    return len(el1) == len(el2)
+def is_valid_hex_code(str):
+    if str[0] != "#":
+        return False
+    if len(str) != 7:
+        return False
+    for letter in str[1:]:
+        if letter.upper() not in "ABCDEF1234567890":
+            return False
+    return True
 
-print(compare("AB", "CD"))  # > True
-print(compare("ABC", "DE"))  # > False
-print(compare("hello", "App Academy"))  # > False
+print(is_valid_hex_code("#CD5C5C"))  # > True
+print(is_valid_hex_code("#EAECEE"))  # > True
+print(is_valid_hex_code("#eaecee"))  # > True
+
+print(is_valid_hex_code("#CD5C58C"))
+# Prints False
+# Length exceeds 6
+
+print(is_valid_hex_code("#CD5C5Z"))
+# Prints False
+# Not all alphabetic characters in A-F
+
+print(is_valid_hex_code("#CD5C&C"))
+# Prints false
+# Contains unacceptable character
+
+print(is_valid_hex_code("CD5C5C"))
+# Prints False
+# Missing #
