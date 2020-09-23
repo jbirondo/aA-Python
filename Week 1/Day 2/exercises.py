@@ -151,17 +151,21 @@
 
 # ---
 
-# Write your function, here.
+# # Write your function, here.
 
-def cap_space(str):
-    res = ""
-    for letter in str:
-        if letter.isupper():
-            res += " {}".format(letter.lower())
-        else:
-            res += letter
-    return res
+# def cap_space(str):
+#     res = ""
+#     for letter in str:
+#         if letter.isupper():
+#             res += " {}".format(letter.lower())
+#         else:
+#             res += letter
+#     return res
 
-print(cap_space("helloWorld"))  # > "hello world"
-print(cap_space("iLoveMyTeapot"))  # > "i love my teapot"
-print(cap_space("stayIndoors"))  # > "stay indoors"
+# print(cap_space("helloWorld"))  # > "hello world"
+# print(cap_space("iLoveMyTeapot"))  # > "i love my teapot"
+# print(cap_space("stayIndoors"))  # > "stay indoors"
+
+# ---
+
+
