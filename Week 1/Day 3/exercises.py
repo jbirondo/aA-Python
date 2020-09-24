@@ -271,10 +271,10 @@
 # print(first_last([None, 4, "6", "hello", None]))  # > [None, None]
 
 # Write your function, here.
-def find_digit_amount(i):
-    return len(str(abs(i)))
-print(find_digit_amount(123))  # > 3
-print(find_digit_amount(-56))  # > 2
-print(find_digit_amount(7154))  # > 4
-print(find_digit_amount(61217311514))  # > 11
-print(find_digit_amount(0))  # > 1
+# def find_digit_amount(i):
+#     return len(str(abs(i)))
+# print(find_digit_amount(123))  # > 3
+# print(find_digit_amount(-56))  # > 2
+# print(find_digit_amount(7154))  # > 4
+# print(find_digit_amount(61217311514))  # > 11
+# print(find_digit_amount(0))  # > 1
