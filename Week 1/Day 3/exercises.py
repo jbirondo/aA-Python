@@ -193,3 +193,23 @@
 # print(can_nest([3, 1], [4, 0]))  # > True
 # print(can_nest([9, 9, 8], [8, 9]))  # > False
 # print(can_nest([1, 2, 3, 4], [2, 3]))  # > False
+
+GUEST_LIST = {
+    "Kurt": "Germany",
+    "Julia": "France",
+    "Ito": "Japan",
+    "Katherine": "England",
+    "Sam": "Argentina"
+}
+
+
+# # Write your function, here.
+def greeting(key):
+    if key in GUEST_LIST:
+        return "Hi! I'm {} from {}".format(key, GUEST_LIST[key])
+    else:
+        return "Hi! I'm a guest."
+
+print(greeting("Kurt"))  # > "Hi! I'm Kurt from Germany."
+print(greeting("Sam"))  # > "Hi! I'm Sam from Argentina."
+print(greeting("Monty"))  # > "Hi! I'm a guest."
