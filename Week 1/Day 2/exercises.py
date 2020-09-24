@@ -272,20 +272,114 @@
 
 # ---
 
+# # Write your function, here.
+# def first_before_second(str, el1, el2):
+#     return(len(str) - str[::-1].find(el1) < str.find(el2))
+
+# print(first_before_second("a rabbit jumps joyfully", "a", "j"))
+# #> True
+# # Every instance of "a" occurs before every instance of "j".
+
+# print(first_before_second("knaves knew about waterfalls", "k", "w"))
+# #> True
+
+# print(first_before_second("happy birthday", "a", "y"))
+# #> False
+# # The "a" in "birthday" occurs after the "y" in "happy".
+
+# print(first_before_second("precarious kangaroos", "k", "a"))
+
+# ---
 # Write your function, here.
-def first_before_second(str, el1, el2):
-    return(len(str) - str[::-1].find(el1) < str.find(el2))
+# There are hints after the print statements
 
-print(first_before_second("a rabbit jumps joyfully", "a", "j"))
-#> True
-# Every instance of "a" occurs before every instance of "j".
+def seq_of_numbers(string):
+    start = 0
+    end = 1
+    l = []
+    res= ""
+    while end <= len(string):
+        if all_same(string[start:end]):
+            end += 1
+        else:
+            l.append(string[start:end - 1])
+            start = end - 1
+    l.append(string[start:end])
 
-print(first_before_second("knaves knew about waterfalls", "k", "w"))
-#> True
+    for ele in l:
+        res += str(ele.count(ele[0])) + ele[0]
 
-print(first_before_second("happy birthday", "a", "y"))
-#> False
-# The "a" in "birthday" occurs after the "y" in "happy".
+    return res
 
-print(first_before_second("precarious kangaroos", "k", "a"))
+def all_same(str):
+    for i in range(1, len(str)):
+        if str[i] != str[0]:
+            return False
+    return True
+
+
+
+# print(seq_of_numbers("1211"))
+# This is "one 1, one 2, two 1s"
+# Prints "111221"
+
+# print(seq_of_numbers("111221"))
+# # This is "three 1s, two 2s, and one 1"
+# # Prints "312211"
+
+print(seq_of_numbers("31131211131221"))
+# # This is "one 3, two 1s, one 3, one 1, one 2, three 1s,
+# #    one 3, one 1, two 2s, and one 1"
+# # Prints "13211311123113112211"
+
+
+###########################################################
+# AN ALGORITHM
+# An algorithm for performing this without a data structure
+# means you have to think about what you're trying to look
+# for.
+#
+# If you scan the string two characters at a time, when they
+# change, you know that you have started a new sequence of
+# numbers. You can add the current number of characters that
+# you've scanned to a result.
+#
+# For example, say you had "111221". You would start the
+# count at 1 and compare the characters at indices 0 and 1.
+# Since they are the same, you would increment the current
+# count to two, because you will have found two 1s. Then,
+# you would compare the characters at indices 1 and 2.
+# Again, they are both 1s, so you would increment the count
+# to 3. The next comparison, the one at indices 2 and 3
+# yields the characters "1" and "2". At this point, the
+# characters have changed. The current count is 3, and the
+# current character is "1", so you would concatenate those
+# onto a result "31". Then, you would set the current count
+# back to 1 (because you have found one 2), and continue
+# with the same process.
+
+
+############################################################
+# PSEUDOCODE
+#
+# Concatenate an empty space to the end of the value passed
+#    into the function. This will let you compare the entire
+#    length of the original string with a guarantee that the
+#    two last characters do not match.
+# Create an empty string to which you will append the
+#    counts and digits
+# Initialize an index to 0 for looping over the string
+# Initialize a counter variable to record the count of the
+#    current character
+# Using the index variable, loop from 0 to the length of the
+#    string minus 1 (because you don't want to examine the
+#    last character, the space that you added)
+#   If the current character is not equal to the next
+#      character, then concatenate the current count and the
+#      current character to the result string and set the
+#      current count back to 1
+#   Otherwise, just increment the current character count by
+#      1
+#   Increment the index by 1
+# Return the result
 
