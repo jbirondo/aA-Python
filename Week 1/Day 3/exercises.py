@@ -239,3 +239,12 @@
 # print(find_smallest_num([-76, 1.345, 1, 0]))  # > -76
 # print(find_smallest_num([0.4356, 0.8795, 0.5435, -0.9999]))  # > -0.9999
 # print(find_smallest_num([7, 7, 7]))  # > 7
+
+# Write your function, here.
+
+def is_empty(d):
+    a = True if len(d) == 0 else False
+    return a
+    
+print(is_empty({}))  # > True
+print(is_empty({"a": 1}))  # > False
