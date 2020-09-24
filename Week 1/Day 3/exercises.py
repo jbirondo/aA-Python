@@ -248,3 +248,15 @@
 
 # print(is_empty({}))  # > True
 # print(is_empty({"a": 1}))  # > False
+
+# # Write your function, here.
+# def difference(l):
+#     return max(l) - min(l)
+
+# print(difference([10, 15, 20, 2, 10, 6]))
+# # 20 - 2 = 18
+
+# print(difference([-3, 4, -9, -1, -2, 15]))
+# # 15 - (-9) = 24
+
+# print(difference([4, 17, 12, 2, 10, 2]))
