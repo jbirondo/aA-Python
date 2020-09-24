@@ -281,30 +281,64 @@
 
 # Write your function, here.
 
-def track_robot(l):
-    moves = [0, 0]
-    for x in l:
-        a = x.split()[0]
-        b = x.split()[1]
-        if a == "right":
-            moves[0] += int(b)
-        if a == "left":
-            moves[0] -= int(b)
-        if a == "up":
-            moves[1] += int(b)
-        if a == "down":
-            moves[1] -= int(b)
-    return moves
+# def track_robot(l):
+#     moves = [0, 0]
+#     for x in l:
+#         a = x.split()[0]
+#         b = x.split()[1]
+#         if a == "right":
+#             moves[0] += int(b)
+#         if a == "left":
+#             moves[0] -= int(b)
+#         if a == "up":
+#             moves[1] += int(b)
+#         if a == "down":
+#             moves[1] -= int(b)
+#     return moves
 
         
 
 
-print(track_robot(["right 10", "up 50", "left 30", "down 10"]))
-# Prints [-20, 40]
+# print(track_robot(["right 10", "up 50", "left 30", "down 10"]))
+# # Prints [-20, 40]
 
-print(track_robot([]))
-# Prints [0, 0]
-# If there are no instructions, the robot doesn't move.
+# print(track_robot([]))
+# # Prints [0, 0]
+# # If there are no instructions, the robot doesn't move.
 
-print(track_robot(["right 100", "right 100", "up 500", "up 10000"]))
-# Prints [200, 10500]
+# print(track_robot(["right 100", "right 100", "up 500", "up 10000"]))
+# # Prints [200, 10500]
+
+# STEP 1: Complete analyze function to return 5 values
+#    - minimum
+#    - maximum
+#    - mean (a.k.a. average)
+#    - median (center point)
+#    - mode (most repeated)
+def analyze(nums):
+    return ()
+
+# STEP 2: Complete median function to return center number
+#         WITHOUT using built-in function
+
+
+def median(nums):
+    return
+
+# STEP 3: Complete mode function to return most-repeated number
+#         WITHOUT using built-in function
+# BONUS B: Catch special case where more than one value repeats the most
+
+
+def mode(nums):
+    return
+
+
+# DO NOT EDIT - sample data for checking your work
+sample1 = 1, 2, 3, 4, 5, 6, 7, 8, 9
+sample2 = [37, 45, 23, 65, 75, 34, 23, 23, 23, 65, 12, 99]
+print(('min', 'max', 'mean', 'median', 'mode'))
+print(analyze(sample1))
+print(analyze(sample2))
+
+# BONUS A: Print more samples as you see fit
