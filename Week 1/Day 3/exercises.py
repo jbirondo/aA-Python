@@ -260,3 +260,12 @@
 # # 15 - (-9) = 24
 
 # print(difference([4, 17, 12, 2, 10, 2]))
+
+# Write your function, here.
+
+def first_last(l):
+    return [l[0], l[-1]]
+
+print(first_last([5, 10, 15, 20, 25]))  # > [5, 25]
+print(first_last([13, None, False, True]))  # > [13, True]
+print(first_last([None, 4, "6", "hello", None]))  # > [None, None]
