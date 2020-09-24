@@ -293,27 +293,27 @@
 # Write your function, here.
 # There are hints after the print statements
 
-def seq_of_numbers(string):
-    start = 0
-    end = 1
-    l = []
-    res= ""
-    while end <= len(string):
-        if all_same(string[start:end]):
-            end += 1
-        else:
-            l.append(string[start:end - 1])
-            start = end - 1
-    l.append(string[start:end])
-    for ele in l:
-        res += str(ele.count(ele[0])) + ele[0]
-    return res
+# def seq_of_numbers(string):
+#     start = 0
+#     end = 1
+#     l = []
+#     res= ""
+#     while end <= len(string):
+#         if all_same(string[start:end]):
+#             end += 1
+#         else:
+#             l.append(string[start:end - 1])
+#             start = end - 1
+#     l.append(string[start:end])
+#     for ele in l:
+#         res += str(ele.count(ele[0])) + ele[0]
+#     return res
 
-def all_same(str):
-    for i in range(1, len(str)):
-        if str[i] != str[0]:
-            return False
-    return True
+# def all_same(str):
+#     for i in range(1, len(str)):
+#         if str[i] != str[0]:
+#             return False
+#     return True
 
 
 
@@ -325,7 +325,7 @@ def all_same(str):
 # # This is "three 1s, two 2s, and one 1"
 # # Prints "312211"
 
-print(seq_of_numbers("31131211131221"))
+# print(seq_of_numbers("31131211131221"))
 # # This is "one 3, two 1s, one 3, one 1, one 2, three 1s,
 # #    one 3, one 1, two 2s, and one 1"
 # # Prints "13211311123113112211"
