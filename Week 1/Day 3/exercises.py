@@ -263,9 +263,18 @@
 
 # Write your function, here.
 
-def first_last(l):
-    return [l[0], l[-1]]
+# def first_last(l):
+#     return [l[0], l[-1]]
 
-print(first_last([5, 10, 15, 20, 25]))  # > [5, 25]
-print(first_last([13, None, False, True]))  # > [13, True]
-print(first_last([None, 4, "6", "hello", None]))  # > [None, None]
+# print(first_last([5, 10, 15, 20, 25]))  # > [5, 25]
+# print(first_last([13, None, False, True]))  # > [13, True]
+# print(first_last([None, 4, "6", "hello", None]))  # > [None, None]
+
+# Write your function, here.
+def find_digit_amount(i):
+    return len(str(abs(i)))
+print(find_digit_amount(123))  # > 3
+print(find_digit_amount(-56))  # > 2
+print(find_digit_amount(7154))  # > 4
+print(find_digit_amount(61217311514))  # > 11
+print(find_digit_amount(0))  # > 1
