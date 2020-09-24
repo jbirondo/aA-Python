@@ -1,8 +1,8 @@
-import random
+from random import randint
 
 num_guesses = 0
 max_guesses = 5
-rand = random.randint(1, 20)
+rand = randint(1, 20)
 
 user_name = input("What is your name?: ")
 
