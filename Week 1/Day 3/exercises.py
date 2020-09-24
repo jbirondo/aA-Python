@@ -150,3 +150,12 @@
 # print(get_first_value([1, 2, 3]))  # > 1
 # print(get_first_value([80, 5, 100]))  # > 80
 # print(get_first_value([-500, 0, 50]))  # > -500
+
+# Write your function, here.
+
+def get_sum_of_elements(l):
+    return sum(l)
+
+print(get_sum_of_elements([2, 7, 4]))  # > 13
+print(get_sum_of_elements([45, 3, 0]))  # > 48
+print(get_sum_of_elements([-2, 84, 23]))  # > 105
