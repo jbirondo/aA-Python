@@ -136,9 +136,17 @@
 # for i in range(0, 9, 2):
 #     print(i)
 
-# Powers of 2 from 1 to 16
-# Write a for loop that uses the range function to
-# print the powers of 2 from 2 - 65536, that is
-# from 2^1st - 2^16th powers
-for i in range(1, 17):
-    print(2 ** i)
+# # Powers of 2 from 1 to 16
+# # Write a for loop that uses the range function to
+# # print the powers of 2 from 2 - 65536, that is
+# # from 2^1st - 2^16th powers
+# for i in range(1, 17):
+#     print(2 ** i)
+
+# Write your function, here.
+def get_first_value(l):
+    return l[0]
+
+print(get_first_value([1, 2, 3]))  # > 1
+print(get_first_value([80, 5, 100]))  # > 80
+print(get_first_value([-500, 0, 50]))  # > -500
