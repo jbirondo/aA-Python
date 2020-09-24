@@ -305,10 +305,8 @@ def seq_of_numbers(string):
             l.append(string[start:end - 1])
             start = end - 1
     l.append(string[start:end])
-
     for ele in l:
         res += str(ele.count(ele[0])) + ele[0]
-
     return res
 
 def all_same(str):
